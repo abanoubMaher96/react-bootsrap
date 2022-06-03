@@ -1,0 +1,18 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+$theme-colors: (
+  "danger": #ff3150,
+);
+.btn-danger {
+  color: #ffc400 !important;
+  //   border-radius: 50rem !important;
+}
+.active {
+  color: var(--green-color) !important;
+}
+@import "~bootstrap/scss/bootstrap";

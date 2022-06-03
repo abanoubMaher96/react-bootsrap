@@ -1,0 +1,24 @@
+.navBar_container {
+  background-color: var(--dark-color);
+
+  .nav-link {
+    color: #fff !important;
+    &:hover {
+      color: var(--green-color) !important;
+    }
+  }
+  .active {
+    color: var(--green-color) !important;
+  }
+  .navbar-toggler {
+    border-color: #fff;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  //   @media (max-width: 991.98px) {
+  .loginBtn {
+    width: fit-content;
+  }
+  //   }
+}
