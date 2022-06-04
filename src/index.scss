@@ -15,4 +15,7 @@ $theme-colors: (
 .active {
   color: var(--green-color) !important;
 }
+.text-warning {
+  color: #ffc400 !important;
+}
 @import "~bootstrap/scss/bootstrap";

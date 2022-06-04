@@ -2,7 +2,8 @@ import React from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
 import Home from "./Components/home/Home";
 import NavBar from "./Components/NavBar/NavBar";
-import Services from "./Components/Services";
+import Portofolio from "./Components/Portofolio/Portofolio";
+import Services from "./Components/servicesComponent/Services";
 
 export function RouterComponent() {
   return (
@@ -16,6 +17,7 @@ export function RouterComponent() {
               <>
                 <Home />
                 <Services />
+                <Portofolio />
               </>
             }
           />

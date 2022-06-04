@@ -1,13 +1,11 @@
 import React from "react";
 import { Nav, Navbar, Container, Button } from "react-bootstrap";
-import { Link, NavLink, useLocation } from "react-router-dom";
 import websiteLogo from "../../assets/logo.png";
 import "./style.scss";
 import { FaBars, FaSearch } from "react-icons/fa";
 // import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 import { Link as ReactScrollLink } from "react-scroll";
 const NavBar = () => {
-  let location = useLocation();
   return (
     <Navbar
       bg="light"
@@ -25,7 +23,7 @@ const NavBar = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav
             className="ms-auto py-lg-3 "
-            activeKey={location.pathname}
+            // activeKey={location.pathname}
             variant="light"
           >
             <Nav.Link
@@ -47,13 +45,34 @@ const NavBar = () => {
             >
               Services
             </Nav.Link>
-            <Nav.Link as={Link} to="/Portofolio">
+            <Nav.Link
+              as={ReactScrollLink}
+              activeClass="active"
+              to="Portofolio"
+              spy
+              offset={-75}
+              duration={2000}
+            >
               Portofolio
             </Nav.Link>
-            <Nav.Link as={Link} to="/About">
+            <Nav.Link
+              as={ReactScrollLink}
+              activeClass="active"
+              to="About"
+              spy
+              offset={-75}
+              duration={2000}
+            >
               About
             </Nav.Link>
-            <Nav.Link as={Link} to="/Contact">
+            <Nav.Link
+              as={ReactScrollLink}
+              activeClass="active"
+              to="Contact"
+              spy
+              offset={-75}
+              duration={2000}
+            >
               Contact
             </Nav.Link>
             <div
