@@ -10,7 +10,7 @@ import { FaPlug } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <Element name="Services" className="vh-100 services_container">
+    <Element name="Services" className="services_container">
       <Container className="mt-5">
         <section className="d-flex flex-column align-items-center mb-5">
           <img src={title} alt="title" className="mb-4" />
