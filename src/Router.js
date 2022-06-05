@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import AboutUs from "./Components/aboutUs/AboutUs";
 import Home from "./Components/home/Home";
 import NavBar from "./Components/NavBar/NavBar";
 import Portofolio from "./Components/Portofolio/Portofolio";
@@ -18,6 +19,7 @@ export function RouterComponent() {
                 <Home />
                 <Services />
                 <Portofolio />
+                <AboutUs />
               </>
             }
           />
